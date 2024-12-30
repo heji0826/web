@@ -45,7 +45,7 @@
                 commentTable = "admin_comments";
             }
 
-            // 댓글 삽입 쿼리 (nickname은 저장하지 않음)
+            // 댓글 삽입 쿼리
             String query = "INSERT INTO " + commentTable + " (post_id, user_id, content) VALUES (?, ?, ?)";
             stmt = conn.prepareStatement(query);
             stmt.setInt(1, postId);
